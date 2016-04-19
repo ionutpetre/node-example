@@ -1,0 +1,13 @@
+<div id="dashboard" class="container" ng-if="isDashboardLoaded">
+    <logout-btn></logout-btn>
+    <h2>Dashboard of {{user.fullName}}</h2>
+    <div class="list-group">
+        <a class="list-group-item" ng-repeat="activity in activities" 
+        ui-sref="profile({id: activity.user.id})">
+            <img class="pull-left user-img" ng-src="{{activity.user.imgUrl}}">
+            <h4 class="list-group-item-heading">{{activity.title}}</h4>
+            <p class="list-group-item-text">{{activity.description}}</p>
+        </a>
+    </div>
+</div>
+<loading-img ng-if="!isDashboardLoaded"></loading-img>

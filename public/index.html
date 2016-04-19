@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Introduction to NodeJS & ExpressJS</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.7/angular.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.7/angular-cookies.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.18/angular-ui-router.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles/index.css">
+</head>
+
+<body ng-app="demo">
+    <ui-view></ui-view>
+    <script src="scripts/app.js"></script>
+    <script src="scripts/config.js"></script>
+    <script src="scripts/run.js"></script>
+    <script src="scripts/common/services/backendData.js"></script>
+    <script src="scripts/common/services/session.js"></script>
+    <script src="scripts/common/directives/logoutBtn.js"></script>
+    <script src="scripts/common/directives/loadingImg.js"></script>
+    <script src="scripts/login/controllers/login.js"></script>
+    <script src="scripts/dashboard/controllers/dashboard.js"></script>
+    <script src="scripts/profile/controllers/profile.js"></script>
+</body>
+
+</html>

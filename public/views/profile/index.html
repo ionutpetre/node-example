@@ -1,0 +1,18 @@
+<div id="profile" class="container" ng-if="isProfileLoaded">
+    <logout-btn></logout-btn>
+    <h2>Profile of {{user.fullName}}</h2>
+    <div class="row">
+        <div class="col-xs-6 col-md-4">
+            <img class="thumbnail" ng-src="{{user.imgUrl}}" alt="{{user.fullName}}">
+        </div>
+        <div class="col-xs-12 col-md-8" style="padding-top:30px">
+            <h3><span class="label label-default">Name</span>
+                {{user.fullName}}
+            </h3>
+            <h4><span class="label label-default">Username</span>
+                {{user.username}}
+            </h4>
+        </div>
+    </div>
+</div>
+<loading-img ng-if="!isProfileLoaded"></loading-img>

@@ -1,0 +1,26 @@
+{
+  "name": "node-example",
+  "version": "1.0.0",
+  "description": "Introduction to NodeJS & ExpressJS",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ionutpetre/node-example.git"
+  },
+  "keywords": [
+    "node",
+    "express",
+    "tutorial"
+  ],
+  "author": "Ionut Petre",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ionutpetre/node-example/issues"
+  },
+  "homepage": "https://github.com/ionutpetre/node-example#readme",
+  "dependencies": {
+    "body-parser": "^1.15.0",
+    "cookie-parser": "^1.4.1",
+    "express": "^4.13.4",
+    "path": "^0.12.7"
+  }
+}
