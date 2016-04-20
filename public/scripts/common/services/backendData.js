@@ -23,11 +23,16 @@ function backendData($http) {
         return $http.get("api/activity/" + activityId);
     }
 
+    function createActivity(activity) {
+        return $http.post("api/activity", activity);
+    }
+
     return {
         authUser: authUser,
         getUserById: getUserById,
         getActivities: getActivities,
-        getActivityById: getActivityById
+        getActivityById: getActivityById,
+        createActivity: createActivity
     };
 }
 

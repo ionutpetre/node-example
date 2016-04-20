@@ -1,0 +1,1 @@
+[{"id":1,"username":"ionut.petre@ro.ibm.com","fullName":"Ionut Petre","password":"123","imgUrl":"http://icons.iconarchive.com/icons/designbolts/free-male-avatars/128/Male-Avatar-icon.png"},{"id":2,"username":"john.doe@ro.ibm.com","fullName":"John Doe","password":"123","imgUrl":"http://icons.iconarchive.com/icons/designbolts/free-male-avatars/128/Male-Avatar-Cool-Cap-icon.png"}]

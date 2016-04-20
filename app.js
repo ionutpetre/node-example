@@ -5,7 +5,8 @@ var express = require('express'),
 
     userService = require('./routes/services/user'),
     userApi = require('./routes/api/user'),
-    activityApi = require('./routes/api/activity');
+    activityApi = require('./routes/api/activity'),
+    dbService = require('./routes/services/myDb');
 
 var app = express();
 

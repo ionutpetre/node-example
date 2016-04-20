@@ -1,4 +1,4 @@
-var db = require('./mockDb');
+var db = require('./myDb');
 var user = {};
 
 user.auth = function(user, callback) {

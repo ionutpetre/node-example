@@ -19,6 +19,11 @@ function config($stateProvider, $urlRouterProvider) {
             controller: 'ProfileController',
             templateUrl: 'views/profile/index.html'
         })
+        .state('activityCreate', {
+            url: '/activity/create',
+            controller: 'CreateActivityController',
+            templateUrl: 'views/activity/create.html'
+        })
     $urlRouterProvider.otherwise('/login');
 }
 

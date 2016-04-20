@@ -1,4 +1,4 @@
-var db = require('./mockDb');
+var db = require('./myDb');
 var activity = {};
 
 activity.getAll = function(callback) {
@@ -18,6 +18,24 @@ activity.getById = function(id, callback) {
             return;
         }
         callback(undefined, doc);
+    });
+}
+
+activity.create = function(activity, callback) {
+    db.createActivity(activity, function(err) {
+        if (err) {
+            callback(err);
+            return;
+        }
+    });
+}
+
+activity.update = function(activity, callback) {
+    db.updateActivity(activity, function(err) {
+        if (err) {
+            callback(err);
+            return;
+        }
     });
 }
 

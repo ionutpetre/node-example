@@ -2,10 +2,11 @@ angular
     .module('demo.dashboard')
     .controller('DashboardController', DashboardController);
 
-function DashboardController($scope, $session, $backendData) {
+function DashboardController($scope, $state, $session, $backendData) {
     $scope.user = {};
     $scope.activities = [];
     $scope.isDashboardLoaded = false;
+    $scope.goToCreateActivity = goToCreateActivity;
     getDashboardData();
 
     function getDashboardData() {
@@ -19,6 +20,10 @@ function DashboardController($scope, $session, $backendData) {
                     });
             });
     }
+
+    function goToCreateActivity() {
+        $state.go('activityCreate');
+    }
 }
 
-DashboardController.$inject = ['$scope', '$session', '$backendData'];
+DashboardController.$inject = ['$scope', '$state', '$session', '$backendData'];
