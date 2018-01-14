@@ -20,6 +20,6 @@ app.use(cookieParser());
 app.use('/api/user', userApi);
 app.use('/api/activity', userService.check, activityApi);
 
-var server = app.listen(3000, function() {
-    console.log('Listening on port 3000...');
+var server = app.listen(process.env.PORT, function() {
+    console.log('Server started on ' + process.env.PORT);
 });
